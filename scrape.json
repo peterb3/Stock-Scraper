@@ -1,23 +1,27 @@
 {
     "elements": [
         {
-            "from": "[class='Trsdu\\(0\\.3s\\) Fw\\(b\\) Fz\\(36px\\) Mb\\(-4px\\) D\\(ib\\)']",
+            "from": "[data-test='qsp-price']",
             "to": "price"
         },
         {
-            "from": "[data-test='PREV_CLOSE-value'] [class]",
+            "from": "[data-test='qsp-price-change']",
+            "to": "price_change"
+        },
+        {
+            "from": "[data-test='PREV_CLOSE-value']",
             "to": "prev_close"
         },
         {
-            "from": "[data-test='OPEN-value'] [class]",
+            "from": "[data-test='OPEN-value']",
             "to": "open"
         },
         {
-            "from": "[data-test='BID-value'] [class]",
+            "from": "[data-test='BID-value']",
             "to": "bid"
         },
         {
-            "from": "[data-test='ASK-value'] [class]",
+            "from": "[data-test='ASK-value']",
             "to": "ask"
         },
         {
@@ -29,27 +33,27 @@
             "to": "52_week_range"
         },
         {
-            "from": "[data-test='TD_VOLUME-value'] [class]",
+            "from": "[data-test='TD_VOLUME-value']",
             "to": "volume"
         },
         {
-            "from": "[data-test='AVERAGE_VOLUME_3MONTH-value'] [class]",
+            "from": "[data-test='AVERAGE_VOLUME_3MONTH-value']",
             "to": "avg_volume"
         },
         {
-            "from": "[data-test='MARKET_CAP-value'] [class]",
+            "from": "[data-test='MARKET_CAP-value']",
             "to": "market_cap"
         },
         {
-            "from": "[data-test='BETA_5Y-value'] [class]",
+            "from": "[data-test='BETA_5Y-value']",
             "to": "beta"
         },
         {
-            "from": "[data-test='PE_RATIO-value'] [class]",
+            "from": "[data-test='PE_RATIO-value']",
             "to": "pe"
         },
         {
-            "from": "[data-test='EPS_RATIO-value'] [class]",
+            "from": "[data-test='EPS_RATIO-value']",
             "to": "eps"
         },
         {
@@ -65,7 +69,7 @@
             "to": "ex_dividend_yield"
         },
         {
-            "from": "[data-test='ONE_YEAR_TARGET_PRICE-value'] [class]",
+            "from": "[data-test='ONE_YEAR_TARGET_PRICE-value']",
             "to": "target_est"
         }
     ]
