@@ -1,75 +1,51 @@
 {
     "elements": [
         {
-            "from": "[data-test='qsp-price']",
+            "from": "[class='yf-xxbei9']",
+            "to": "name"
+        },
+        {
+            "from": "[class='livePrice yf-1tejb6']",
             "to": "price"
         },
         {
-            "from": "[data-test='qsp-price-change']",
+            "from": "[class='priceChange yf-1tejb6']",
             "to": "price_change"
         },
         {
-            "from": "[data-test='PREV_CLOSE-value']",
+            "from": "[data-field='regularMarketPreviousClose']",
             "to": "prev_close"
         },
         {
-            "from": "[data-test='OPEN-value']",
+            "from": "[data-field='regularMarketOpen']",
             "to": "open"
         },
         {
-            "from": "[data-test='BID-value']",
-            "to": "bid"
-        },
-        {
-            "from": "[data-test='ASK-value']",
-            "to": "ask"
-        },
-        {
-            "from": "[data-test='DAYS_RANGE-value']",
+            "from": "[data-field='regularMarketDayRange']",
             "to": "days_range"
         },
         {
-            "from": "[data-test='FIFTY_TWO_WK_RANGE-value']",
+            "from": "[data-field='fiftyTwoWeekRange']",
             "to": "52_week_range"
         },
         {
-            "from": "[data-test='TD_VOLUME-value']",
+            "from": "[data-field='regularMarketVolume']",
             "to": "volume"
         },
         {
-            "from": "[data-test='AVERAGE_VOLUME_3MONTH-value']",
+            "from": "[data-field='averageVolume']",
             "to": "avg_volume"
         },
         {
-            "from": "[data-test='MARKET_CAP-value']",
+            "from": "[data-field='marketCap']",
             "to": "market_cap"
         },
         {
-            "from": "[data-test='BETA_5Y-value']",
-            "to": "beta"
-        },
-        {
-            "from": "[data-test='PE_RATIO-value']",
+            "from": "[data-field='trailingPE']",
             "to": "pe"
         },
         {
-            "from": "[data-test='EPS_RATIO-value']",
-            "to": "eps"
-        },
-        {
-            "from": "[data-test='EARNINGS_DATE-value']",
-            "to": "earnings_date"
-        },
-        {
-            "from": "[data-test='DIVIDEND_AND_YIELD-value']",
-            "to": "dividend_and_yield"
-        },
-        {
-            "from": "[data-test='EX_DIVIDEND_DATE-value'] span",
-            "to": "ex_dividend_yield"
-        },
-        {
-            "from": "[data-test='ONE_YEAR_TARGET_PRICE-value']",
+            "from": "[data-field='targetMeanPrice']",
             "to": "target_est"
         }
     ]

@@ -6,9 +6,6 @@ from requests import HTTPError, TooManyRedirects
 from contextlib import asynccontextmanager
 
 
-elements_to_scrape = {}
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     f = open("scrape.json")
@@ -21,14 +18,14 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 
-@app.get("/root")
+@app.get("/")
 async def root():
     return "Hello World!"
 
 
-@app.get("v1/{symbol}/summary/")
+@app.get("/v1/{symbol}/summary/")
 async def summary(symbol, q: Optional[List[str]] = Query(None)):
-    summary_data = {}
+    # summary_data = {}
 
     try:
         s = Scrape(symbol, elements_to_scrape)
@@ -44,4 +41,5 @@ async def summary(symbol, q: Optional[List[str]] = Query(None)):
     except HTTPError:
         raise HTTPException(status_code=500, detail="An error has occurred while processing the request.")
 
+    print(summary_data)
     return summary_data
